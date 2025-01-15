@@ -26,6 +26,10 @@ body {
   color: white;
 }
 
+.hamburger-menu::after {
+  content: "☰";
+}
+
 nav {
   position: fixed;
   z-index: 200;
@@ -44,6 +48,7 @@ nav {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
+
   width: 100%;
   height: 70px;
 }
@@ -104,9 +109,11 @@ header {
   height: 100vh;
   overflow: hidden;
 }
+
 header .textSectionWrapper {
   padding-top: 130px;
 }
+
 .textSectionWrapper {
   display: flex;
   justify-content: space-around;
@@ -130,7 +137,6 @@ header .textSectionWrapper {
   width: 100%;
   height: auto;
   object-fit: cover;
-
   transform: scale(1.06);
 }
 
@@ -188,11 +194,13 @@ header .textSectionWrapper {
   display: flex;
   justify-content: space-between; /* Poravnanje artikala s lijeve strane */
 }
+
 .sectionPadding {
   margin-top: 50px;
   padding-top: 10px;
   border-top: 2px solid #e5e5e5;
 }
+
 h2 {
   font-size: 32px;
   line-height: 1.14286em;
@@ -204,18 +212,22 @@ h2 {
   font-weight: 500;
   margin-bottom: 5px;
 }
+
 .article p {
   color: rgb(146, 146, 146);
 }
+
 .article .author-signature {
   margin-top: 5px;
   font-family: Arial, Helvetica, sans-serif;
   color: rgb(0, 0, 0);
   font-size: 0.9em;
 }
+
 .article {
   width: 23%;
 }
+
 .article img {
   width: 100%;
   height: 250px;
@@ -248,20 +260,28 @@ h2 {
     gap: 20px;
     z-index: 1000;
   }
+
   .articleSectionWrapper {
     flex-wrap: wrap;
+  }
+
+  .main-nav input:checked ~ .hamburger-menu::after {
+    content: "X";
+    font-family: sans-serif;
   }
 
   .article {
     width: 48%;
     margin-bottom: 20px;
   }
+
   .sectionText h3 {
     font-size: 28px;
     font-weight: 100;
     margin-bottom: 1rem;
     text-transform: uppercase;
   }
+
   .sectionText {
     margin-bottom: 0;
     font-size: 17px;
@@ -278,6 +298,7 @@ h2 {
   .article {
     width: 100%;
   }
+
   .textSectionWrapper {
     flex-direction: column;
     align-items: center;
@@ -288,12 +309,14 @@ h2 {
     object-fit: cover;
     object-position: center;
   }
+
   .sectionImg {
     order: 2;
     width: 100%;
     max-width: 100%;
     margin-top: 4rem;
   }
+
   .sectionText {
     order: 0;
     width: 100%;
@@ -301,6 +324,7 @@ h2 {
     max-width: 100%;
     font-size: 16px;
   }
+
   header {
     height: auto;
   }
