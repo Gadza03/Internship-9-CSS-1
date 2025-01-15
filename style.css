@@ -6,6 +6,12 @@ body {
   font-family: "Times New Roman", Times, serif;
   line-height: 1.5em;
 }
+.container {
+  width: 90%;
+
+  margin: 0 auto;
+}
+
 .main-nav input {
   display: none;
 }
@@ -22,6 +28,7 @@ body {
 
 nav {
   position: fixed;
+  z-index: 200;
   width: 100%;
   background-color: black;
   display: flex;
@@ -40,12 +47,14 @@ nav {
   width: 100%;
   height: 70px;
 }
+
 .logo {
   justify-self: center;
   align-self: center;
   cursor: pointer;
   grid-column: 2/3;
 }
+
 .nav-actions {
   display: flex;
   align-items: center;
@@ -53,11 +62,13 @@ nav {
   margin-right: 30px;
   font-family: Arial, Helvetica, sans-serif;
 }
+
 .nav-actions > * {
   margin-right: 20px;
   color: #fff;
   text-decoration: none;
 }
+
 .subscribeBtn {
   background-color: #0787ca;
   border-radius: 2px;
@@ -81,9 +92,90 @@ nav {
   color: black;
   margin-left: 12px;
 }
+
 a:hover {
   text-decoration: underline;
 }
+header {
+  background-color: black;
+  height: 100vh;
+  overflow: hidden;
+}
+.sectionContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 130px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.secondary-nav {
+  display: none;
+}
+.sectionImg,
+.sectionText {
+  flex: 1 1 50%;
+  max-width: 50%;
+  overflow: hidden;
+}
+.sectionImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sectionImg img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+  transform: scale(1.06);
+}
+
+.sectionText {
+  max-width: 30rem;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.25rem;
+  line-height: 1.5em;
+  font-weight: 400;
+  letter-spacing: normal;
+  margin-bottom: 10rem;
+}
+
+.sectionText h3 {
+  font-size: 2.25rem;
+  font-weight: 100;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.sectionText a {
+  color: white;
+  text-decoration: none;
+}
+
+.sectionText h3:hover {
+  text-decoration: underline;
+}
+
+.listenBtn {
+  margin-top: 20px;
+  padding: 10px 15px;
+  border-radius: 3em;
+  border: 1px solid #424242;
+  background-color: transparent;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.listenBtn img {
+  margin-right: 0.7rem;
+}
+
 @media (max-width: 1023px) {
   .main-nav label {
     display: block;
