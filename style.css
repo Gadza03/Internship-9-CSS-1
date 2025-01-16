@@ -12,9 +12,10 @@ body {
 }
 h2 {
   font-family: "Irvin-Heading", sans-serif;
+  margin-top: 20px;
 }
 .container {
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -436,15 +437,15 @@ h3 {
 .puzzle-section img {
   width: 80%;
   height: auto;
-  margin-block: 10%;
+  margin-block: 15%;
 }
 
 /*-----*/
 
 footer {
   background-color: #121212;
-  margin-top: 100px;
-  padding-block: 30px;
+  margin-top: 150px;
+  padding-block: 10px;
   color: #a2a2a2;
 }
 footer h4 {
@@ -462,21 +463,24 @@ footer a:hover {
   text-decoration: underline;
 }
 .footer-links {
-  border-block: 1px solid #3b3b3b;
+  border-bottom: 1px solid #3b3b3b;
   padding-block: 20px;
   font-size: 14px;
-  font-weight: 600;
+  font-weight: bold;
 }
 .footer-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: auto;
-  gap: 30px;
+  row-gap: 30px;
 }
 
 .footer-wrapper .footerLogo {
+  width: 100%;
+  text-align: center;
   grid-area: 1/1/1/-1;
-  justify-self: center;
+  border-bottom: 1px solid #3b3b3b;
+  padding-bottom: 20px;
 }
 
 .social-media {
@@ -621,10 +625,6 @@ footer a:hover {
 }
 
 @media (max-width: 768px) {
-  .container {
-    width: 90%;
-  }
-
   .support img {
     margin-left: 0;
   }
