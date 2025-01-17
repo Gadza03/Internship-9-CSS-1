@@ -5,11 +5,13 @@
   margin: 0;
   padding: 0;
 }
+
 body {
   font-family: "TNYAdobeCaslonPro", serif;
   line-height: 1.5em;
   color: rgb(0, 0, 0);
 }
+
 h2 {
   font-family: "Irvin-Heading", sans-serif;
   margin-top: 20px;
@@ -132,6 +134,7 @@ nav {
   margin-top: 10px;
   font-size: 12px;
 }
+
 .subscribe-hover img {
   width: auto;
   height: 100%;
@@ -258,6 +261,7 @@ header .textSectionWrapper {
 .support p {
   font-size: 13px;
 }
+
 .support img {
   width: 48px;
   margin-right: 10px;
@@ -273,7 +277,7 @@ header .textSectionWrapper {
 .articleSectionWrapper {
   width: 100%;
   display: flex;
-  justify-content: space-between; /* Poravnanje artikala s lijeve strane */
+  justify-content: space-between;
 }
 
 .articleSectionWrapper a {
@@ -321,7 +325,7 @@ main a h3:hover {
   margin-top: 5px;
   font-family: Arial, Helvetica, sans-serif;
   color: rgb(0, 0, 0);
-  font-size: 0.9em;
+  font-size: 13px;
 }
 
 .article {
@@ -354,14 +358,13 @@ main a h3:hover {
   font-family: "Irvin-Heading", sans-serif;
   font-size: 36px;
   line-height: 1.11111em;
+  text-align: center;
 }
 
-.person-section .article p {
-  margin-top: 10px;
-}
-
-.person-section .article {
-  max-width: 30rem;
+.person-section .article .person-description {
+  font-size: 18px;
+  line-height: 1.4em;
+  margin-block: 15px;
 }
 
 .photo-wrapper,
@@ -372,6 +375,7 @@ main a h3:hover {
 .photo-wrapper {
   text-align: right;
 }
+
 .photo-wrapper img {
   width: 80%;
 }
@@ -382,6 +386,7 @@ main a h3:hover {
   display: flex;
   justify-content: space-between;
 }
+
 .puzzle-wrapper a {
   display: block;
   width: 23%;
@@ -389,15 +394,18 @@ main a h3:hover {
   margin-top: 4rem;
   font-size: 15px;
 }
+
 .puzzle-section h4,
 h3 {
   font-family: "Irvin-Heading", sans-serif;
   text-align: center;
 }
+
 .puzzle-section h3 {
   font-size: 16px;
   margin-bottom: 5px;
 }
+
 .puzzle-section h2 {
   margin-bottom: 5px;
 }
@@ -418,6 +426,7 @@ h3 {
   text-align: center;
   height: 100%;
 }
+
 .puzzle-section .item1 {
   background-color: #84c9ff;
 }
@@ -445,29 +454,35 @@ h3 {
 footer {
   background-color: #121212;
   margin-top: 150px;
-  padding-block: 10px;
+  padding-top: 10px;
+  padding-bottom: 30px;
   color: #a2a2a2;
 }
+
 footer h4 {
   font-family: "Irvin-Heading", sans-serif;
   color: #ffffe0;
   margin-bottom: 10px;
 }
+
 footer a {
   color: #a2a2a2;
   text-decoration: none;
   font-family: Arial, Helvetica, sans-serif;
   display: block;
 }
+
 footer a:hover {
   text-decoration: underline;
 }
+
 .footer-links {
   border-bottom: 1px solid #3b3b3b;
   padding-block: 20px;
   font-size: 14px;
   font-weight: bold;
 }
+
 .footer-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -507,6 +522,11 @@ footer a:hover {
   transform: translateY(-2px);
 }
 
+footer .adChoice {
+  display: inline-block;
+  text-decoration: underline;
+}
+
 @media (max-width: 1023px) {
   .main-nav label {
     display: block;
@@ -529,8 +549,7 @@ footer a:hover {
     position: fixed;
     top: 70px;
     left: 0;
-    padding: 20px;
-    gap: 20px;
+    gap: 30px;
     z-index: 1000;
   }
 
@@ -573,13 +592,16 @@ footer a:hover {
   .puzzle-wrapper {
     flex-direction: column;
   }
+
   .puzzle-section h4 {
     margin-bottom: 30px;
   }
+
   .puzzle-wrapper a {
     width: 100%;
     margin-top: 10px;
   }
+
   .puzzle-section .puzzle-card {
     display: grid;
     grid-template-columns: 1fr 0.25fr;
@@ -587,6 +609,7 @@ footer a:hover {
     padding: 20px 10px;
     text-align: left;
   }
+
   .puzzle-card img {
     grid-area: 1/2/3/2;
   }
@@ -603,20 +626,25 @@ footer a:hover {
   .footer-wrapper {
     grid-template-columns: 1fr 1fr;
   }
+
   .footer-wrapper a {
     margin-bottom: 2rem;
   }
+
   .footer-wrapper h4 {
     margin-bottom: 2rem;
   }
+
   .social-media-icons {
     order: 1;
     justify-content: center;
     margin-left: 0;
   }
+
   .social-media p {
     order: 2;
   }
+
   .social-media {
     grid-area: 6/1/6/-1;
     grid-template-columns: 1fr;
@@ -628,10 +656,12 @@ footer a:hover {
   .support img {
     margin-left: 0;
   }
+
   .support {
     margin-left: 10px;
     margin-right: 10px;
   }
+
   .textSectionWrapper {
     flex-direction: column;
     align-items: center;
@@ -675,6 +705,7 @@ footer a:hover {
     margin-top: 30px;
     width: 100%;
   }
+
   .play-text {
     margin-top: 15px;
   }
